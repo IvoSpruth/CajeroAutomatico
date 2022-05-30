@@ -12,15 +12,12 @@ public class CajeroManager {
 
     public CajeroManager(){}
 
-    public void start(){
-        
-        logger.log(Level.INFO, "Inicio del programa");
+    public void start(){      
 
         while(run){                       
 
             logger.log(Level.INFO, "Bienvenido a BANELCO");
             logger.log(Level.INFO, "Por favor, ingrese nro DNI");
-
             
         }        
     }
