@@ -8,7 +8,17 @@ public class CajeroManager {
     
     boolean run = true;
     Logger logger = Logger.getLogger(CajeroManager.class.getName());  
-    Scanner entrada = new Scanner(System.in);
+    Scanner in = new Scanner(System.in);
+    
+    int disponibleMil = 100;
+    int disponibleQuini = 0;
+    int disponibleCien = 10;
+    int disponibleCincuenta = 10;      
+    int cant1000 = 0;
+    int cant500 = 0;
+    int cant100 = 0;
+    int cant50 = 0;
+    int parcial = 0;
 
     public CajeroManager(){}
 
