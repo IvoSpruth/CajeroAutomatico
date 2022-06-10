@@ -12,9 +12,17 @@ public class CajeroAutomatico {
         
         while (activo = true){
             System.out.println("Ingrese su DNI:");
+            while (!in.hasNextInt()){
+                System.out.println("Ingrese un DNI valido:");
+                in.next();
+            }
             int dni = in.nextInt();
-             
+ 
             System.out.println("¿Cuanto dinero desea extraer?");
+            while (!in.hasNextInt()){
+                System.out.println("Ingrese una cantidad de dinero valida:");
+                in.next();
+            }            
             int plataRetira = in.nextInt();
         
             r.extraer(plataRetira, dni);
