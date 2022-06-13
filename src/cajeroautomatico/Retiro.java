@@ -73,11 +73,11 @@ public class Retiro {
                     plataRetira = 0;
                 }
             }
+            lista.add(data); // Lo pongo aca para que no salga en el reporte cuando el cajero no cuenta con dinero
         }
         else{
             System.out.println("Lo sentimos, en este momento el cajero no cuenta con el efectivo necesario para realizar su extraccion.");
         }
-        lista.add(data);
         
         System.out.println(lista);
     }
